@@ -1,0 +1,7 @@
+{
+  "scan_method": "arp",
+  "kick_method": "arp",
+  "scan_timeout": 3,
+  "scan_retries": 3,
+  "kick_interval": 1
+}
