@@ -100,7 +100,7 @@ class Kickass:
         print('example: kickass.py 192.168.189.0/24 192.168.189.1')
 
     def arp_scan(self):
-        ans = srp(Ether(dst="ff:ff:ff:ff:ff:ff")/ARP(
+        ans, unans = srp(Ether(dst="ff:ff:ff:ff:ff:ff")/ARP(
             pdst=self.network),
             timeout=self.config['scan_timeout'],
             retry=self.config['scan_retries'])
